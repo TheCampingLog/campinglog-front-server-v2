@@ -4,6 +4,7 @@
 import { useState, useEffect } from 'react';
 import Logo from '@/feature/common/components/header/Logo';
 import Navigation from '@/feature/common/components/header/Navigation';
+import AuthButton from '@/feature/common/components/header/AuthButton';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,6 +28,7 @@ export default function Header() {
             <Logo isScrolled={isScrolled} />
             <Navigation />
           </div>
+          <AuthButton isScrolled={isScrolled} />
         </div>
       </header>
     </div>
